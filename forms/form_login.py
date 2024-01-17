@@ -21,7 +21,7 @@ class App:
             self.mostrar_error("Error de inicio de sesión", "Por favor, completa ambos campos.")
         elif usu == 'root' and password == '1234':
             self.ventana.destroy()
-            master_panel = MasterPanel(tk.Toplevel())
+            master_panel = MasterPanel(tk.Tk())
         else:
             self.mostrar_error("Error de inicio de sesión", "Usuario o contraseña incorrectos")
 
